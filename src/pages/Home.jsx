@@ -1,22 +1,26 @@
 import React, { useState } from 'react';
-import SpreadSelector from '../components/SpreadSelector';
-import { useHistory } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
+import data from "../data/options.json";
 
-const Home = () => {
-    const [selectedSpread, setSelectedSpread] = useState(null);
-    const history = useHistory();
+function Home() {
+    const navigate = useNavigate();
 
-    const handleSelectSpread = (spread) => {
-        setSelectedSpread(spread);
-        history.push(`/spread/${spread}`);
+    const handleSelectOption = (option) => {
+        navigate('/spreadPage', { state: { selectedOption: option } });
     };
 
     return (
         <div>
             <h1>Добро пожаловать в Мистический онлайн-оракул</h1>
-            <SpreadSelector onSelectSpread={handleSelectSpread} />
+            <div>выберите расклад</div>
+            {data.options.map((item) => (
+                <div key={item.id}>
+                    <div>{item.name}</div>
+                    <button onClick={() => handleSelectOption(item)}>Выбрать</button>
+                </div>
+            ))}
         </div>
     );
-};
+}
 
 export default Home;
