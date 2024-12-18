@@ -6,16 +6,16 @@ import { ReactComponent as Logo } from '../assets/svg/logo.svg';
 import { ReactComponent as Telegram } from '../assets/svg/telegram.svg';
 
 function Layout() {
-    const [activeNav, setActiveNav] = useState('');
-    const navigate = useNavigate();
-
+    const [activeNav, setActiveNav] = useState(''); 
+    const navigate = useNavigate(); 
 
     const handleNavClick = (nav) => {
-        setActiveNav(nav);
-        navigate(nav);
+        setActiveNav(nav); 
+        navigate(nav); 
     };
 
     const handleHomeClick = (toHome) => {
+        setActiveNav(''); 
         navigate(toHome);
     };
 
@@ -23,8 +23,8 @@ function Layout() {
         <div className={styles.root}>
             <header>
                 <div
-                    className={styles.blockLogo} 
-                    onClick={() => handleHomeClick('/')}
+                    className={styles.blockLogo}
+                    onClick={() => handleHomeClick('/')} 
                 >
                     <Logo />
                     <h1 className={styles.title}>Сам себе таролог</h1>
@@ -37,8 +37,8 @@ function Layout() {
                         Раскады
                     </li>
                     <li
-                        className={`${styles.navTitle} ${activeNav === '/cards' ? styles.activeNavTitle : ''}`}
-                        onClick={() => handleNavClick('/cards')}
+                        className={`${styles.navTitle} ${activeNav === '/informaciya=po=karte' ? styles.activeNavTitle : ''}`}
+                        onClick={() => handleNavClick('/informaciya=po=karte')}
                     >
                         Карты и значения
                     </li>

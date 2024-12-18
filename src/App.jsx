@@ -2,8 +2,9 @@ import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Home from './pages/Home';
 import Rasklady from './pages/Rasklady';
-import Cards from './pages/Cards';
+import Information from './pages/Information';
 import Layout from './components/Layout';
+import PageRasklad from './pages/PageRasklad';
 
 function App() {
   return (
@@ -13,7 +14,8 @@ function App() {
           <Route path="/" element={<Layout />}>
             <Route index element={<Home />} />
             <Route path="rasklady" element={<Rasklady />} />
-            <Route path="cards" element={<Cards />} />
+            <Route path="rasklad/:link" element={<PageRasklad />} />
+            <Route path="informaciya=po=karte" element={<Information />} />
           </Route>
         </Routes>
       </BrowserRouter>

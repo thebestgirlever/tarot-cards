@@ -1,0 +1,23 @@
+.block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 30px;
+}
+
+.title {
+    color: #ffffff;
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 35px;
+}
+
+.main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 90px;
+    gap: 50px;
+}

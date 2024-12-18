@@ -2,15 +2,51 @@
     "options": [
         {
             "id": 1,
-            "name": "будущее"
+            "name": "112 домов",
+            "link": "112_domov",
+            "title": "Разложим по полочкам каждый аспект вашей жизни",
+            "cards": 12,
+            "image": "../../public/assets/svg/12domov.svg"
         },
         {
             "id": 2,
-            "name": "вопрос-ответ"
+            "name": "4 домов",
+            "link": "4_domov",
+            "title": "Разложим по полочкам каждый аспект вашей жизни",
+            "cards": 4,
+            "image": "../../public/assets/svg/12domov.svg"
         },
         {
             "id": 3,
-            "name": "12 домов"
+            "name": "2 домов",
+            "link": "2_domov",
+            "title": "Разложим по полочкам каждый аспект вашей жизни",
+            "cards": 2,
+            "image": "../../public/assets/svg/12domov.svg"
+        },
+        {
+            "id": 4,
+            "name": "3 домов",
+            "link": "3_domov",
+            "title": "Разложим по полочкам каждый аспект вашей жизни",
+            "cards": 3,
+            "image": "../../public/assets/svg/12domov.svg"
+        },
+        {
+            "id": 5,
+            "name": "10 домов",
+            "link": "10_domov",
+            "title": "Разложим по полочкам каждый аспект вашей жизни",
+            "cards": 10,
+            "image": "../../public/assets/svg/12domov.svg"
+        },
+        {
+            "id": 6,
+            "name": "6 домов",
+            "link": "6_domov",
+            "title": "Разложим по полочкам каждый аспект вашей жизни",
+            "cards": 6,
+            "image": "../../public/assets/svg/12domov.svg"
         }
     ]
 }
