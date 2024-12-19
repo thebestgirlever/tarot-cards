@@ -3,7 +3,7 @@
 function Home() {
     return (
         <div>
-            <h1>Добро пожаловать!</h1>
+            <h1>Добро dlskvnslnf пожаловать!</h1>
         </div>
     );
 }

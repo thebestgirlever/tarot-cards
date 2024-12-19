@@ -5,7 +5,7 @@ import { ReactComponent as Image } from '../assets/svg/12domov.svg';
 function CardRaskad({ item }) {
 
     return (
-        <Link to={`/raskald/${item.link}`}>
+        <Link to={`/rasklad/${item.link}`}>
             <div className={styles.card}>
                 <div className={styles.name}>{item.name}</div>
                 <div className={styles.image}><Image /></div>

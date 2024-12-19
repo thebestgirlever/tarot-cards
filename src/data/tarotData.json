@@ -2,11 +2,13 @@
     "cards": [
         {
             "id": 1,
-            "name": "Шут"
+            "name": "Шут",
+            "image": "1.jpg"
         },
         {
             "id": 2,
-            "name": "Маг"
+            "name": "Маг",
+            "image": "1.jpg"
         },
         {
             "id": 3,
