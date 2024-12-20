@@ -1,9 +1,9 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Select from "react-select";
 import dataCard from "../data/tarotData.json";
 import styles from './Rasklad.module.css';
 
-function Rasklad() {
+function Rasklad({ onCardSelect, selectedCard }) {
     const cardShirt = '0.png';
 
     const options = dataCard.cards.map((card) => ({
@@ -12,19 +12,23 @@ function Rasklad() {
         image: `${process.env.PUBLIC_URL}/images/${card.image}` 
     }));
 
-    const [selectedCard, setSelectedCard] = useState(null);
+    const [currentSelectedCard, setCurrentSelectedCard] = useState(selectedCard);
+
+    useEffect(() => {
+        setCurrentSelectedCard(selectedCard);
+    }, [selectedCard]);
 
     const handleSelect = (selectedOption) => {
-        setSelectedCard(selectedOption);
-        console.log("Выбранная карта:", selectedOption);
+        setCurrentSelectedCard(selectedOption);
+        onCardSelect(selectedOption); 
     };
 
     return (
         <div className={styles.container}>
             <div className={styles.card}>
                 <img
-                    src={selectedCard ? selectedCard.image : `${process.env.PUBLIC_URL}/images/${cardShirt}`}
-                    alt={selectedCard ? selectedCard.label : "Рубашка карты"}
+                    src={currentSelectedCard ? currentSelectedCard.image : `${process.env.PUBLIC_URL}/images/${cardShirt}`}
+                    alt={currentSelectedCard ? currentSelectedCard.label : "Рубашка карты"}
                     className={styles.cardImage}
                 />
             </div>
@@ -34,7 +38,7 @@ function Rasklad() {
                     placeholder="Ваша карта..."
                     noOptionsMessage={() => "Карта не найдена"}
                     onChange={handleSelect}
-                    value={selectedCard}
+                    value={currentSelectedCard}
                     isSearchable
                 />
             </div>

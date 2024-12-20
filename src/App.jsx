@@ -5,6 +5,7 @@ import Rasklady from './pages/Rasklady';
 import Information from './pages/Information';
 import Layout from './components/Layout';
 import PageRasklad from './pages/PageRasklad';
+import ResultPage from "./pages/ResultPage";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
             <Route path="rasklady" element={<Rasklady />} />
             <Route path="rasklad/:link" element={<PageRasklad />} />
             <Route path="informaciya=po=karte" element={<Information />} />
+            <Route path="/result" element={<ResultPage />} />
           </Route>
         </Routes>
       </BrowserRouter>

@@ -2,51 +2,143 @@
     "options": [
         {
             "id": 1,
-            "name": "112 домов",
-            "link": "112_domov",
-            "title": "Разложим по полочкам каждый аспект вашей жизни",
-            "cards": 12,
-            "image": "../../public/assets/svg/12domov.svg"
+            "name": "Карта дня",
+            "link": "karta_dnya",
+            "title": "Узнай, что тебя ждет сегодня",
+            "image": "../../public/assets/svg/12domov.svg",
+            "cards": 1,
+            "cardsDetails": [
+                {
+                    "cardId": 1,
+                    "title": "Карта дня",
+                    "description": "Карта дня покажет, что ожидает тебя сегодня."
+                }
+            ]
         },
         {
             "id": 2,
-            "name": "4 домов",
-            "link": "4_domov",
-            "title": "Разложим по полочкам каждый аспект вашей жизни",
-            "cards": 4,
-            "image": "../../public/assets/svg/12domov.svg"
+            "name": "Вопрос про ситуацию",
+            "link": "3_karti",
+            "title": "Карты расскажут, что с твоей ситуацией",
+            "image": "../../public/assets/svg/12domov.svg",
+            "cards": 3,
+            "cardsDetails": [
+                {
+                    "cardId": 1,
+                    "title": "Прошлое",
+                    "description": "Описание первой карточки"
+                },
+                {
+                    "cardId": 2,
+                    "title": "Настоящее",
+                    "description": "Описание второй карточки"
+                },
+                {
+                    "cardId": 3,
+                    "title": "Будущее",
+                    "description": "Описание третьей карточки"
+                }
+            ]
         },
         {
             "id": 3,
             "name": "2 домов",
             "link": "2_domov",
             "title": "Разложим по полочкам каждый аспект вашей жизни",
-            "cards": 2,
-            "image": "../../public/assets/svg/12domov.svg"
+            "image": "../../public/assets/svg/12domov.svg",
+            "cards": 12,
+            "cardsDetails": [
+                {
+                    "cardId": 1,
+                    "title": "Карточка 1",
+                    "description": "Описание первой карточки"
+                },
+                {
+                    "cardId": 2,
+                    "title": "Карточка 2",
+                    "description": "Описание второй карточки"
+                },
+                {
+                    "cardId": 3,
+                    "title": "Карточка 3",
+                    "description": "Описание третьей карточки"
+                }
+            ]
         },
         {
             "id": 4,
             "name": "3 домов",
             "link": "3_domov",
             "title": "Разложим по полочкам каждый аспект вашей жизни",
-            "cards": 3,
-            "image": "../../public/assets/svg/12domov.svg"
+            "image": "../../public/assets/svg/12domov.svg",
+            "cards": 12,
+            "cardsDetails": [
+                {
+                    "cardId": 1,
+                    "title": "Карточка 1",
+                    "description": "Описание первой карточки"
+                },
+                {
+                    "cardId": 2,
+                    "title": "Карточка 2",
+                    "description": "Описание второй карточки"
+                },
+                {
+                    "cardId": 3,
+                    "title": "Карточка 3",
+                    "description": "Описание третьей карточки"
+                }
+            ]
         },
         {
             "id": 5,
             "name": "10 домов",
             "link": "10_domov",
             "title": "Разложим по полочкам каждый аспект вашей жизни",
-            "cards": 10,
-            "image": "../../public/assets/svg/12domov.svg"
+            "image": "../../public/assets/svg/12domov.svg",
+            "cards": 12,
+            "cardsDetails": [
+                {
+                    "cardId": 1,
+                    "title": "Карточка 1",
+                    "description": "Описание первой карточки"
+                },
+                {
+                    "cardId": 2,
+                    "title": "Карточка 2",
+                    "description": "Описание второй карточки"
+                },
+                {
+                    "cardId": 3,
+                    "title": "Карточка 3",
+                    "description": "Описание третьей карточки"
+                }
+            ]
         },
         {
             "id": 6,
             "name": "6 домов",
             "link": "6_domov",
             "title": "Разложим по полочкам каждый аспект вашей жизни",
-            "cards": 6,
-            "image": "../../public/assets/svg/12domov.svg"
+            "image": "../../public/assets/svg/12domov.svg",
+            "cards": 12,
+            "cardsDetails": [
+                {
+                    "cardId": 1,
+                    "title": "Карточка 1",
+                    "description": "Описание первой карточки"
+                },
+                {
+                    "cardId": 2,
+                    "title": "Карточка 2",
+                    "description": "Описание второй карточки"
+                },
+                {
+                    "cardId": 3,
+                    "title": "Карточка 3",
+                    "description": "Описание третьей карточки"
+                }
+            ]
         }
     ]
 }
