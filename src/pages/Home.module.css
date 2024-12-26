@@ -1,0 +1,163 @@
+.container {
+    color: #fff;
+    overflow-x: hidden;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.heroSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 1440px;
+    height: 472px;
+    background-image: url("../../public/images/homeBG.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    gap: 30px;
+}
+
+.mainHeading {
+    font-size: 46px;
+    font-weight: 500;
+    margin: 0;
+    color: #fff;
+}
+
+.subHeading {
+    font-size: 26px;
+    margin-bottom: 30px;
+    color: #ddd;
+    margin: 0;
+}
+
+.ctaButton {
+    background: #FC42FF;
+}
+
+.ctaButtonGrey {
+    background: #676666;
+}
+
+.ctaButton,
+.ctaButtonGrey {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    border: 1px solid #FFFBFB;
+
+    width: 200px;
+    height: 50px;
+    color: #FFF;
+    font-size: 18px;
+    font-weight: 700;
+    transition: background-color 0.3s ease;
+}
+
+
+.ctaButton:hover {
+    background-color: #c41bc7;
+}
+
+.ctaButtonGrey:hover {
+    background: #393939;
+}
+
+.infoSection {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto 90px;
+    padding: 50px 0;
+    width: 1260px;
+}
+
+.infoText {
+    color: #FFF;
+    font-size: 28px;
+    font-weight: 400;
+}
+
+.infoImage {
+    max-width: 590px;
+}
+
+.spreadSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    width: 100%;
+    height: 650px;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.50) 0%, rgba(252, 66, 255, 0.50) 27%, rgba(252, 66, 255, 0.50) 75%, rgba(0, 0, 0, 0.50) 100%);
+}
+
+.sectionHeading {
+    font-size: 40px;
+    font-weight: 500;
+    margin: 0;
+    color: #fff;
+}
+
+.spreads {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.spreadCard {
+    background-color: #ffffff;
+    color: #000000;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 200px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+
+.interpretationSection {
+
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    text-align: center;
+    margin: 50px 90px;
+    width: 100%;
+
+}
+
+.interpretationImage {
+    width: 324px;
+}
+
+.interpretationBlock {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.finalSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    gap: 30px;
+    width: 1261px;
+    height: 370px;
+    background: radial-gradient(50% 50% at 50% 50%, #FC42FF 0%, #000 100%);
+}
+
