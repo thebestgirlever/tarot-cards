@@ -67,7 +67,7 @@ function Home() {
 
             <section className={styles.finalSection}>
                 <h2 className={styles.sectionHeading}>Готовы узнать ответы на свои вопросы?</h2>
-                <Link to="/rasklady" className={styles.ctaButtonGrey}>Начать расклад</Link>
+                <Link to="/rasklady" className={styles.ctaButtonGrey}>Узнать</Link>
             </section>
         </div>
     );

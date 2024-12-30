@@ -16,6 +16,7 @@ function PageRasklad() {
         if (currentItem) {
             setItem(currentItem);
             setSelectedCards(Array.from({ length: currentItem.cards }).fill(null)); 
+            localStorage.setItem("selectedRasklad", JSON.stringify(currentItem));
         }
     }, [link]);
 
@@ -65,8 +66,8 @@ function PageRasklad() {
                 ))}
             </div>
             <div className={styles.buttons}>
-                <button onClick={handleRandomSelection}>Случайный выбор</button>
-                <button onClick={handleResult}>Узнать ответы</button>
+                <button className={styles.ctaButtonGrey} onClick={handleRandomSelection}>Случайный выбор</button>
+                <button className={styles.ctaButton} onClick={handleResult}>Узнать ответы</button>
             </div>
         </div>
     );
